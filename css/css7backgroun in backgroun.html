@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.a
+		{
+			height: 200px;
+			width: 200px;
+			background-color: green;
+
+			clip-path: polygon(50% 0%,100% 100%,0%100%);
+		}
+		.b
+		{
+			height: 500px;
+			width: 500px;
+			background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1XvJyTyxPdj2-Ql83QciIb6hpPC8KWQYXvCwVGJw&s            ),
+			             url(file:///C:/Users/TOPS/Downloads/pexels-lukas-rodriguez-3680219.jpg);
+						
+			background-size: 100px 100px,100% 100%;
+			background-repeat: no-repeat,no-repeat;
+			background-position: 200px 100px,left;
+			clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%); 
+
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="a"></h1>
+	<h1 class="b"></h1>
+
+</body>
+</html>
