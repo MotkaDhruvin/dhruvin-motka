@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		
+		.product
+		{
+			height: 320px;
+			width: 200px;
+			background: lightblue;
+			box-shadow: 0 0 10px black;
+			/*border-radius: 30px;*/
+			border-color: black;
+
+			margin: 20px 20px;
+			position: relative;
+
+
+
+			
+		}
+		.product .img
+		{
+			height: 200px;
+			width: 200px;
+			background: lightblue;
+			
+		}
+		.product .view
+		{
+			height: 50px;
+			width: 200px;
+			background:black;
+			color: white;
+			text-align: center;
+			line-height: 50px;
+
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+		}
+		.product .info
+		{
+			height: 100px;
+			width: 200px;
+			background: lightblue;
+			text-align: center;
+		}
+		.product:hover .view
+		{
+			opacity: 0.8;
+			top:150px;
+
+		}
+
+
+		.product button
+		{
+			transform: scale(1);
+
+			transition: 5s;
+		}
+		.product:hover button
+		{
+			transform: scale(1.5); 
+
+
+
+		}
+		.product .info .a
+		{
+			font-size:18px;
+		}
+		.product .info .b
+		{
+			background: green
+		}
+		.main
+		{
+			border: solid 3px;
+			display: inline-flex;
+			margin: 100px 50px;
+			flex-wrap: wrap;
+			
+		}
+		.main span
+		{
+			background: darkred;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="main">
+
+
+
+		<!-- 1 -->
+
+		<div class="product">
+
+
+			<div class="img">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" height="100%" width="100%">
+			
+			</div>
+			<div class="view">
+								QUICK VIEW
+			
+			</div>
+			<div  class="info">
+				<p>Gabi Full Sleeve Sweatshirt</p>
+				<p class="a">$45.99 <del>  $69.71 </del></p>
+				<button class="b">ADD TO CART</button>
+			
+			</div>
+		
+		</div>
+
+
+
+		<!-- 2 -->
+
+		<div class="product">
+
+
+			<div class="img">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" height="100%" width="100%">
+			
+			</div>
+			<div class="view">
+								QUICK VIEW
+			
+			</div>
+			<div  class="info">
+				<p>Dark Blue Track Pants</p>
+				<p class="a">$80.99 <del>  $89.71 </del></p>
+				<button class="b">ADD TO CART</button>
+			
+			</div>
+		
+		</div>
+
+
+
+
+		<!-- 3 -->
+
+		<div class="product">
+
+			<span>NEW</span>
+			<div class="img">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg" height="100%" width="100%">
+			
+			</div>
+			<div class="view">
+								QUICK VIEW
+			
+			</div>
+			<div  class="info">
+				<p>Party Men's Blazer</p>
+				<p class="a">$260.99 <del> $390.71 </del></p>
+				<button class="b">ADD TO CART</button>
+			
+			</div>
+		
+		</div>
+
+
+
+		<!-- 4 -->
+
+		<div class="product">
+
+
+			<div class="img">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg" height="100%" width="100%">
+			
+			</div>
+			<div class="view">
+								QUICK VIEW
+			
+			</div>
+			<div  class="info">
+				<p>Analog Watch</p>
+				<p class="a">$160.99  <del> $290.71 </del></p>
+				<button class="b">ADD TO CART</button>
+			
+			</div>
+		
+		</div>
+
+
+
+
+		<!-- 5 -->
+		<div class="product">
+
+			<span>NEW</span>
+			<div class="img">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg" height="100%" width="100%">
+			
+			</div>
+			<div class="view">
+								QUICK VIEW
+			
+			</div>
+			<div  class="info">
+				<p>Reversible Belt</p>
+				<p class="a">$30.99 <del>  $50.71 </del></p>
+				<button class="b">ADD TO CART</button>
+			
+			</div>
+		
+		</div>
+
+
+
+
+
+
+
+	</div>
+		
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
