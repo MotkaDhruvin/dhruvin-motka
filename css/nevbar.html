@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{ margin: 0 ;padding: 0;
+			box-sizing: border-box;
+		 }
+		.main
+		{
+			height: 100px;
+			width: 100%;
+			background: black;
+			text-align: center;
+			padding: 20px 10px;
+
+
+
+		}
+		.heder
+		{
+			display: inline;
+			margin-right:  50px;
+			position: relative;
+			list-style: none;
+
+
+
+		}
+		.heder a
+		{
+			text-decoration: none;
+			color: #fff;
+			font-size: 30px;
+		}
+
+
+
+
+		
+		.heder::after
+		{
+			content:"";
+
+			position: absolute;
+			top: 390%;
+			left: 0;
+
+			
+			height: 5px;
+			width: 0px;
+			background: blue;
+			transition: 1s;
+			
+
+		}
+
+		.heder:hover::after
+		{
+			width: 100%;
+		}
+
+
+	
+		.dropdown
+		{
+			position: absolute;
+			top:70px;
+			left: 0;
+
+
+			display: none;
+			
+		}
+
+		 .heder:hover .dropdown
+		{
+			display: block;
+		}
+
+
+		.dropdown a
+		{
+			background:#000;
+			color: #FFF;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	 
+	<div class="main">
+		
+		<ul >
+			
+			<li class="heder"> <a href="">home</a>
+
+
+				<ul class="dropdown">
+					
+					<li><a href="">123</a></li>
+					<li><a href="">234</a></li>
+					<li><a href="">345</a></li>
+					<li><a href="">456</a></li>
+					<li><a href="">567</a></li>
+
+				</ul>
+
+
+			</li>
+
+			<li class="heder"> <a href="">about</a>
+
+				<ul class="dropdown">
+					
+					<li><a href="">123</a></li>
+					<li><a href="">234</a></li>
+					<li><a href="">345</a></li>
+					<li><a href="">456</a></li>
+					<li><a href="">567</a></li>
+
+				</ul>
+			</li>
+			<li class="heder"> <a href="">men's wear</a>
+
+
+				<ul class="dropdown">
+					
+					<li><a href="">123</a></li>
+					<li><a href="">234</a></li>
+					<li><a href="">345</a></li>
+					<li><a href="">456</a></li>
+					<li><a href="">567</a></li>
+
+				</ul>
+
+			</li>
+
+				
+			<li class="heder"> <a href="">women's wear</a>
+
+				<ul class="dropdown">
+					
+					<li><a href="">123</a></li>
+					<li><a href="">234</a></li>
+					<li><a href="">345</a></li>
+					<li><a href="">456</a></li>
+					<li><a href="">567</a></li>
+
+				</ul>
+			</li>
+			<li class="heder"> <a href="">short codes</a>
+
+				<ul class="dropdown">
+					
+					<li><a href="">123</a></li>
+					<li><a href="">234</a></li>
+					<li><a href="">345</a></li>
+					<li><a href="">456</a></li>
+					<li><a href="">567</a></li>
+
+				</ul>
+			</li>
+			<li class="heder"> <a href="">contact</a>
+
+				<ul class="dropdown">
+					
+					<li><a href="">123</a></li>
+					<li><a href="">234</a></li>
+					<li><a href="">345</a></li>
+					<li><a href="">456</a></li>
+					<li><a href="">567</a></li>
+
+				</ul>
+			</li>
+			
+		</ul>
+
+
+
+	</div>
+
+</body>
+</html>
