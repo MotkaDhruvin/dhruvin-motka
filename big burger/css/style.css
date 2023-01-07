@@ -1,0 +1,900 @@
+	*{margin: 0;padding: 0; box-sizing: border-box;}
+	body{background: #E3DCC2;}
+	body{overflow-x:hidden;}
+
+	 /*LINE start*/
+	.line
+	{
+		height: 100px;
+		width: 1250px;
+		background: rgb(64, 28, 16);
+		border-radius: 20px;
+		margin: 35px 40px;
+		display: flex;
+		text-align: center;
+		line-height: 100px;
+		position: absolute;
+
+	}
+	.line p 
+	{
+		font-family: 'Fredoka One', cursive
+	}
+	.line .p1
+	{
+		color: #fff;
+		font-size: 40px;
+		margin: -18px  50px;
+	}
+	.line .p2
+	{
+		color: #F18B00;
+		font-size: 35px;
+		margin: -66px 50px;
+	}
+	
+
+	.line .a1
+	{
+		width: 11%;
+		
+	}
+	.line .name
+	{
+		margin: 0px 160px;
+
+	}
+
+   	.line .ul1
+	{
+		color: #fff;
+		font-size: 20px;
+		font-family: 'Fredoka One', cursive;
+		display: flex;
+		list-style: none;
+	}
+	.heder a
+	{
+		text-decoration: none;
+		color: #fff;
+		font-size: 20px;
+		padding: 13px;
+	}
+	.heder
+	{
+		position: relative;
+	}
+	.heder::after
+	{
+		content:"";
+
+		position: absolute;
+		top: 65%;
+		left: 0;
+
+		height: 5px;
+		width: 0;
+		background: #fff;
+		transition: 1s;
+	}
+	.heder:hover::after
+	{
+		width: 90%;
+	}
+	
+	.line .a2
+	{
+		height: 50px;
+		width: 150px;
+		background:#F18B00 ;
+		border: 2px solid #fff;
+		border-radius: 10px;
+		box-shadow: 10px 10px 0px #fff;
+		/*width: 15%;*/
+		margin: 25px 60px;
+		color: #fff;
+		padding: 20px 20px;
+		transform: scale(1.0) ;
+		transition: 0.4s;
+		
+	}
+	.line .a2 p
+	{
+		position: absolute;
+		top: -28px;
+		right: 27px;
+	}
+	.line .a2:hover
+	{
+		transform: scale(1.1);
+	}
+	.dropdown
+	{
+		height: 270px;
+		width: 150px;
+		background: rgb(64, 28, 16) ;
+
+		position: absolute; top: 10px ; left: 0px; border-radius: 10px;
+		padding: -20px 20px; line-height: 46px;
+		list-style: none;
+		display: none;
+		z-index: 1;
+	}
+	.heder:hover .dropdown
+	{
+		display: block;
+	}
+	
+	 /*LINE AND*/
+	 /*MID START*/
+	 .mid
+	 {
+	 	height: 0px;
+	 	width: 1300px;
+	 	position: relative;
+	 
+	 }
+	.img1
+	{
+		height: 450px;
+		width: 450px;
+		transform: rotate(-15deg);
+		position: absolute;
+	    top: 280px;
+	    left: -100px;
+	    
+		
+	}
+	.img2
+	{
+		height: 450px;
+		width: 450px;
+		transform: rotate(15deg);
+		position: absolute;
+		top: 280px;
+		right: -100px;
+	}
+    .taxt .big
+	{
+		position: absolute;
+		top: 300px;
+		left: 390px;
+		font-size: 100px;
+		color:  #F9A93D;
+		font-family: 'Fredoka One', cursive;
+	
+		text-shadow: -10px -10px 0px  rgb(64, 28, 16);
+
+	}
+	.taxt pre
+	{
+		position: absolute;
+		top: 700px;
+		left: 40px;
+		font-size: 20px;
+		color: #6F491E;
+	}
+	.order
+	{
+		height: 55px;
+		width: 170px;
+		background:#EF7006 ;
+		border-radius: 10px;
+		border: 2px solid rgb(64, 28, 16);
+		box-shadow: 10px 10px 0 rgb(64, 28, 16);
+		position: absolute;
+		top: 810px;
+		right: 600px;
+		font-size: 20px;
+		font-family: 'Fredoka One', cursive;
+		color: #fff;
+		line-height: 50px;
+		text-align: center;
+		transform: scale(1.0);
+		transition: 0.5s;
+
+	}
+	.order:hover
+	{
+		transform: scale(1.1);
+	}
+
+	.img3
+	{
+		position: absolute;
+		top: 800px;
+		left: 90px;
+	}
+	.img3a
+	{
+		height: 130px;
+		width: 130px;
+		position: absolute;
+		top: 190px;
+		right: 130px;
+	}
+	/*MID AND*/
+	/* CART START */
+
+	.mainbox
+	{
+		height: 320px;
+		width: auto;
+		/*border: 2px solid black;*/
+		position: relative;
+		top: 1050px ;
+		display: flex;
+		margin: 0px 20px;
+	}
+	.cart
+	{
+		height: 280px;
+		width: 280px;
+		border: 3px solid rgb(64, 28, 16);
+		border-radius: 20px;
+		box-shadow: 10px 10px 0px rgb(64, 28, 16);
+		transition: 0.5s;
+		margin: 0px 20px;
+	}
+	.imgitm
+	{
+		height: 190px;
+		width: 240px;
+		margin: 20px 15px;
+		border-radius: 20px;
+		transition: 0.5s;
+
+	}
+	.mainbox p
+	{
+		color: rgb(64, 28, 16);
+		font-family: 'Fredoka One', cursive;
+		font-size: 40px;
+		/*margin: -15px 60px;*/
+		line-height: 25px;
+		text-align: center;
+
+	}
+
+	.cart:hover
+	{
+		box-shadow: 15px 15px 0px rgb(64, 28, 16);
+	}
+	.imgitm:hover
+	{
+		margin: 12px 15px;
+	}
+	/* CART AND */
+	/*discount AND free START*/
+
+	.discount
+	{
+		height: 280px;
+		width: 600px;
+		background: url(../img/8.jpg);
+		background-size: 100% 100%;
+		border: 2px solid rgb(64, 28, 16);
+		border-radius: 23px;
+		box-shadow: 10px 10px 0px rgb(64, 28, 16) ,100px 0px 500px rgb(64, 28, 16) inset;
+		position: relative;
+		top: 1150px;
+		left: 35px;
+	}
+	.discount p
+	{
+		color: #fff;
+		font-size: 35px;
+		font-family: 'Fredoka One', cursive;
+		padding: 60px 45px;
+	}
+	.discount div
+	{
+		height: 50px;
+		width: 180px;
+		border: 2px solid #fff;
+		border-radius: 10px;
+		margin: -30px 45px ;
+		line-height: 45px;
+		text-align: center;
+		font-size: 20px;
+		color: #fff;
+		font-family: 'Fredoka One', cursive;
+		transform: scale(1.0);
+		transition: 0.3s;
+	}
+	.discount div:hover
+	{
+		transform: scale(1.1);
+	}
+	 .free
+	 {
+	 	height: 280px;
+		width: 600px;
+		background: url(../img/9.jpg);
+		background-size: 100% 100%;
+		border: 2px solid rgb(64, 28, 16);
+		border-radius: 23px;
+		box-shadow: 10px 10px 0px rgb(64, 28, 16) ,100px 0px 180px #AFAAAA inset;
+		position: relative;
+		top: 870px;
+		left: 675px;
+	 }
+	 .free .big
+	 {
+	 	font-size: 35px;
+	 	color: #fff;
+	 	font-family: 'Fredoka One', cursive;
+	 	padding: 60px 45px;
+	 }
+	 .free .simpal
+	 {
+	 	font-size: 20px;
+	 	color: #fff;
+	 	margin: -50px 45px;
+	 	word-spacing: 3px;
+	 }
+	 .free .a1
+	 {
+	 	height: 40px;
+	 	width: 150px;
+	 	position: absolute;
+	 	top: 190px;
+	 	left: 40px;
+	 	transform: scale(1.0);
+	 	transition: 0.3s;
+	 }
+	 .free .a2
+	 {
+	 	height: 40px;
+	 	width: 150px;
+	 	position: absolute;
+	 	top: 190px;
+	 	right: 240px;
+	 	transform: scale(1.0);
+	 	transition: 0.3s;
+
+	 }
+	 .free .a1:hover
+	 {
+	 	transform: scale(1.1);
+	 }
+	  .free .a2:hover
+	 {
+	 	transform: scale(1.1);
+	 }
+
+	 /*discount AND free AND*/
+	 /*MENU start*/
+	 .wave
+	 {
+	 	
+	 	height: 150px;
+	 	width: 1400px;
+	 	/*border: 2px solid black;*/
+	 	margin: 900px 0px;
+	 }
+
+	 .menuf
+	 {
+	 	height: 900px;
+	 	width: 1400px;
+	 	background: #fff;
+	 	margin: -770px 0px;
+	 }
+	 .menuf p
+	 {
+	 	height: 50px;
+	 	width: 500px;
+	 	font-size: 55px;
+	 	color: rgb(64, 28, 16);
+	 	font-family: 'Fredoka One', cursive;
+		padding: 40px 30px;
+	 }
+	 .menuf .view
+	 {
+	 	
+		height: 60px;
+		width: 180px;
+		border-radius: 10px;
+		border: 2px solid rgb(64, 28, 16);
+		box-shadow: 10px 10px 0 rgb(64, 28, 16);
+		font-size: 23px;
+		font-family: 'Fredoka One', cursive;
+		color: rgb(64, 28, 16);
+		line-height: 55px;
+		text-align: center;
+		margin:-30px 1050px;
+		transform: scale(1.0);
+		transition: 0.3s;
+	 }
+	
+	 .menuf .view:hover
+	 {
+	 	transform: scale(1.1);
+	 }
+
+	 /*menu and*/
+	 /*menu img start*/
+	 .menu1
+	 {
+	 	height: 450px;
+	 	width: 1400px;
+	 	background: #fff;
+	 	margin: 80px 0px;
+	 	display: flex;
+
+	 }
+	 .menu1 .menuimg
+	 {
+	 	height: 450px;
+	 	width: 450px;
+	 	
+	 	border-right: 1px solid #C1BBB1;
+	 	border-bottom: 1px solid #C1BBB1 ;
+	 }
+	 .menu1 .menuimg img
+	 {
+	 	height: 300px;
+	 	width: 280px;
+	 	margin: 0px 80px;
+	 	transform: scale(1.0);
+	 	transition: 0.3s;
+	    
+	 }
+	 .menu1 .menuimg img:hover
+	 {
+	 	transform: scale(1.1);
+	 }
+
+	 .menu1 .menuimg .name
+	 {
+	 	font-family: 'Fredoka One', cursive;
+	 	color: rgb(64, 28, 16);
+	 	font-size: 25px;
+	 	text-align: center;
+	 	
+	 }
+	 .menu1 .menuimg .price
+	 {
+	 	font-family: 'Fredoka One', cursive;
+	 	color:#EF7006 ;
+	 	font-size: 35px;
+	 	text-align: center;
+	 	padding: 10px;
+	 	
+	 }
+	 .menu2
+	 {
+	 	height: 450px;
+	 	width: 1400px;
+	 	background: #fff;
+	 	margin: -80px 0px;
+	 	display: flex;
+	 }
+	 .menu2 .menuimg
+	 {
+	 	height: 450px;
+	 	width: 450px;
+	 	
+	 	border-right: 1px solid #C1BBB1;
+	 	border-bottom: 1px solid #C1BBB1 ;
+	 }
+	 .menu2 .menuimg img
+	 {
+	 	height: 300px;
+	 	width: 280px;
+	 	margin: 10px 80px;
+	 	transform: scale(1.0);
+	 	transition:0.3s ;
+	 }
+	 .menu2 .menuimg img:hover
+	 {
+	 	transform: scale(1.1);
+	 }
+	 .menu2 .menuimg .name
+	 {
+	 	font-family: 'Fredoka One', cursive;
+	 	color: rgb(64, 28, 16);
+	 	font-size: 25px;
+	 	text-align: center;
+	 	
+	 }
+	 .menu2 .menuimg .price
+	 {
+	 	font-family: 'Fredoka One', cursive;
+	 	color:#EF7006 ;
+	 	font-size: 35px;
+	 	text-align: center;
+	 	padding: 10px;
+	 	
+	 }
+	 .svgand
+	 {
+	 	margin: 50px 0px;
+	 	width: 1400px;
+	 }
+	 /*MENU IMG AND	*/
+	 /*C REVIEWS START*/
+
+	 .creviews
+	 {
+	 	width: 1300px;
+	 	margin: -100px 0px;
+	 	font-size: 60PX;
+	 	color:  rgb(64, 28, 16);
+	 	font-family: 'Fredoka One', cursive;
+	 	text-align: center;
+	 }
+	 .reviews
+	 {
+	 	height: 350px;
+	 	width: 1300px;
+	 	margin: 150px 0px;
+	 	display: flex;
+	 	padding: 10px 10px;
+
+
+	 }
+	 .reviews .carto
+	 {
+	 	
+	 	height: 300px;
+		width: 290px;
+		background: #F8CF02;
+		border: 3px solid rgb(64, 28, 16);
+		border-radius: 20px;
+		box-shadow: 10px 10px 0px rgb(64, 28, 16);
+		position: relative;
+		margin: 10px 15px;
+	 }
+	  .reviews .carto .s1
+	  {
+	  	color: rgb(64, 28, 16);
+	  	font-size: 20px;
+	  	position: absolute;
+	  	top: 30px;
+	  	left: 20px;
+	  }
+	  .reviews .carto .s2
+	  {
+	  	color: rgb(64, 28, 16);
+	  	font-size: 20px;
+	  	position: absolute;
+	  	top: 30px;
+	  	left: 50px;
+	  }
+	  .reviews .carto .s3
+	  {
+	  	color: rgb(64, 28, 16);
+	  	font-size: 20px;
+	  	position: absolute;
+	  	top: 30px;
+	  	left: 80px;
+	  }
+
+	.reviews .carto .s4
+	  {
+	  	color: rgb(64, 28, 16);
+	  	font-size: 20px;
+	  	position: absolute;
+	  	top: 30px;
+	  	left: 110px;
+	  }
+
+	.reviews .carto .s5
+	  {
+	  	color: rgb(64, 28, 16);
+	  	font-size: 20px;
+	  	position: absolute;
+	  	top: 30px;
+	  	left: 140px;
+	  }
+	 .reviews .carto p
+	 {
+	 	font-size: 25px;
+	 	position: absolute;
+	 	top: 70px;
+	 	left: 20px;
+
+	 }
+	  .reviews .carto img
+	  {
+	  	height: 60px;
+	  	width: 60px;
+	  	border-radius: 50%;
+	  	border: 2px solid rgb(64, 28, 16);
+	  	position: absolute;
+	  	top: 200px;
+	  	left: 20px;
+
+	  }
+	  .reviews .carto .menname
+	  {
+	  	font-family: 'Fredoka One', cursive;
+	  	font-size: 22px;
+	  	color:rgb(64, 28, 16) ;
+	  	position: absolute;
+	  	top: 215px;
+	  	left: 100px;
+	  }
+
+	  /*<!-- C REVIEWS AND -->*/
+	  /*<!-- since seksn start -->*/
+
+	  .since
+	  {
+	  	height: 430px;
+	  	width: 1250px;
+	  	border-bottom: 1px solid grey;
+	  	margin: 50px 30px;
+	  	position: relative;
+	  }
+	  .since .sincebig
+	  {
+	  	font-family: 'Fredoka One', cursive;
+	  	font-size: 50px;
+	  	padding: 0px 20px;
+	  	color:rgb(64, 28, 16) ;
+
+	  }
+	  .since .sincereg
+	  {
+	  	font-size: 20px;
+	  	word-spacing: 7px;
+	    color:rgb(64, 28, 16) ;	   
+	    padding: 25px 20px; 
+	  }
+	 .since .aboutus
+	 {
+
+		height: 60px;
+		width: 200px;
+		border-radius: 10px;
+		border: 2px solid rgb(64, 28, 16);
+		box-shadow: 8px 8px 0 rgb(64, 28, 16);
+		font-size: 23px;
+		font-family: 'Fredoka One', cursive;
+		color: rgb(64, 28, 16);
+		line-height: 55px;
+		text-align: center;
+		margin: 10px 20px;
+		transform: scale(1.0);
+		transition: 0.3s;
+	 }
+	  .since .aboutus:hover
+	  {
+	  	transform: scale(1.1);
+	  }
+	  .since img
+	  {
+	  	height: 350px ;
+	  	width: 600px;
+	  	margin: 10px 650px;
+	  	position: absolute;
+	  	top: 0;
+	  	left:-10px;
+	  	border-radius: 20px;
+	  	border: 3px solid  rgb(64, 28, 16) ;
+	  	box-shadow: 10px 10px 0px  rgb(64, 28, 16);
+
+	  }
+	  .since i
+	  {
+	  	font-size: 100px;
+	  	position: absolute;
+	  	top: 140px;
+	  	right: 250px;
+	  	color: rgb(64, 28, 16) ;
+	  	transform: scale(1.0);
+	  	transition: 0.2s;
+
+	  }
+	  .since i:hover
+	  {
+	  	transform: scale(1.1);
+	  }
+
+	  .fsp
+	  {
+	  	height: 200px;
+	  	width: 1248px;
+	  	margin: 10px 50px;
+	  	display: flex;
+	  }
+	  .fresh
+	  {
+	  	height: 200px;
+	  	width: 416px;
+	   	position: relative;
+	  }
+	  .fsp i
+	  {
+	  	font-size: 40PX;
+	  	color: rgb(64, 28, 16);
+	  	position: absolute;
+	  	top: 35PX;
+	  	left: 10PX;
+	  }
+	  .fsp .p1
+	  {
+	  	font-family: 'Fredoka One', cursive;
+	  	font-size: 35px;
+	  	color: rgb(64, 28, 16);
+	  	margin: 40px 60px;
+	  }
+	  .fsp .p2
+	  {
+	  	font-size: 18px;
+	  	color:rgb(64, 28, 16) ;
+	  	margin: -30px 60px;
+	  	word-spacing: 6px;
+	  }
+	/*since seksn AND */
+	/*checkout start*/
+	.checkout
+	{
+		height: 700px;
+		width: 1400px;
+		margin: 60px 0px;
+		position: relative;
+	}
+	.checkout .box
+	{
+		height: 700px;
+		width: 1000px;
+		border-radius: 20px;
+		background: #fff;
+		margin: auto;
+	}
+	.checkout .box .p1
+	{
+		color: rgb(64, 28, 16);
+		font-size: 50px;
+		font-family: 'Fredoka One', cursive;
+		text-align: center;
+		line-height: 230px;
+	}
+	.checkout .box .insta
+	 {
+
+		height: 60px;
+		width: 300px;
+		border-radius: 10px;
+		border: 2px solid rgb(64, 28, 16);
+		box-shadow: 8px 8px 0 rgb(64, 28, 16);
+		font-size: 20px;
+		font-family: 'Fredoka One', cursive;
+		color: rgb(64, 28, 16);
+		line-height: 55px;
+		text-align: center;
+		margin: 350px auto;
+		transform: scale(1.0);
+		transition: 0.3s;
+	 }
+	  .checkout .box .insta:hover
+	  {
+	  	transform: scale(1.1);
+	  }
+
+	.checkout .menu
+	{
+		height: 270px;
+		width: 1400px;
+		position: absolute;
+		top: 200px;
+		left: 0;
+	}
+	.checkout img
+	{
+		height: 230px;
+		width: 290px;
+		border-radius: 20px;
+		border: 2px solid rgb(64, 28, 16);
+		box-shadow: 10px 10px 0px rgb(64, 28, 16);
+		margin: 10px 15px;
+		transform: scale(1.0);
+		transition: 0.3s;
+	}
+	.checkout img:hover
+	{
+		transform: scale(1.1);
+	}
+	/*checkout AND*/
+	/*app start*/
+
+	.app
+	{
+		height: 290px;
+		width: 1240px;
+		margin: 200px 30px;
+		display: flex;
+		position: relative;
+	}
+	.app .box1
+	{
+		height: 290px;
+		width: 620px;
+		background: #E0BC08;
+		border: 2px solid rgb(64, 28, 16);
+		border-radius: 20px;
+		box-shadow: 10px 10px 0 rgb(64, 28, 16);
+	}
+	.app .box1 p
+	{
+		font-family: 'Fredoka One', cursive;
+		font-size: 35px;
+		color: rgb(64, 28, 16);
+		margin: 65px 60px;
+	}
+	.app .a1
+	{
+		height: 40px;
+		width: 150px;
+		margin: 250px -365px;
+		transform: scale(1.0);
+		transition: 0.3s;
+	}
+	.app .a2
+	{
+		height: 40px;
+		width: 150px;
+		margin: 250px -200px;
+		transform: scale(1.0);
+		transition: 0.3s;
+	}
+	.app .a1:hover
+	{
+		transform: scale(1.1);
+	}
+	.app .a2:hover
+	{
+		transform: scale(1.1);
+	}
+	.app img
+	{
+		height: 470px;
+		position: absolute;
+		top: -70px;
+		left: 425px;
+	}
+
+	.app .box2
+	{
+		height: 290px;
+		width: 620px;
+		background: #F57109;
+		border: 2px solid rgb(64, 28, 16);
+		border-radius: 20px;
+		box-shadow: 10px 10px 0 rgb(64, 28, 16);
+	}
+
+	.app .phone
+	{
+		height: 270px;
+		width: 330px;
+		margin: 88px 350px;
+		z-index: 1;
+	}
+	.app .b1
+	{
+		height: 200px;
+		width: 200px;
+		margin: 80px 570px;
+		opacity: 0.2;
+		z-index: 0;
+	}
+	.app .b2
+	{
+		height: 150px;
+		width: 150px;
+		margin: 200px 350px;
+		opacity: 0.2;
+		z-index: 0;
+	}
+
+
+
+
+
+
+	
