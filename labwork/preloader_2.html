@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+	
+	body{background: black;}	
+	.r1
+	{
+		height: 150px;
+		width: 150px;
+		background: transparent;
+		border: 12px solid black;
+		border-top: 10px solid #fff;
+		border-left: 10px solid #fff;
+		border-radius: 50%;
+		margin: 100px auto;
+		padding: 15px;
+
+		/*animation: r1 2s linear infinite;*/
+		animation: r1 1s linear infinite;
+
+	}	
+	.r2
+	{
+		height: 100px;
+		width: 100px;
+		background: transparent;
+		border: 12px solid black;
+		border-top: 10px solid #fff;
+		border-left: 10px solid #fff;
+		border-radius: 50%;
+		padding: 12px;
+
+		animation: r2 1s linear infinite;
+
+	}
+
+
+
+	@keyframes r1
+	{
+		from{transform: rotate(0deg);}
+		to{transform: rotate(360deg);}
+	}
+	@keyframes r2
+	{
+		from{transform: rotate(720deg);}
+		to{transform: rotate(0deg);}
+	}
+
+	</style>
+
+</head>
+<body>
+
+	
+
+		<div class="r1">
+		
+			<div class="r2">
+			
+			</div>
+
+		</div>
+
+	
+
+</body>
+</html>
