@@ -1,0 +1,58 @@
+.body
+{
+    background-color: rgba(129, 41, 129, 0.826);
+}
+
+.circular--radius
+{
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%; 
+    width:200px; 
+    height:200px;
+    margin-left: 75px;
+    margin-top: 80px;
+    
+}
+
+.p1
+{
+    font-weight: bold;
+    margin-left: 115px;
+}
+
+.p2
+{
+    margin-left: 90px;
+}
+.conm
+{
+    display: flex;
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.con1
+{
+    border-left: 2px solid rgba(129, 41, 129, 0.826);
+    width: 400px;
+}
+
+.lable
+{
+    font-weight: bold;
+}
+
+.button1
+{
+    background-color: rgb(161, 40, 161);
+    color: white;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+

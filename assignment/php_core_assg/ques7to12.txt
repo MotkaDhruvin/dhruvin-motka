@@ -1,0 +1,74 @@
+Ques) 
+
+What will be the values of $a and $b after the code below is executed?
+Explain your answer.
+$a = '1';
+$b = &$a;
+$b = "2$b"; 
+
+Ans : 
+	intitially we have value of $a = 1,
+	then for $b, we get the value of $a because the '&' is used to return the value
+	of specific variable, i.e,
+	$b = 2$b where ($b=1)
+	so, the value of 
+	$a = 1 and $b = 21
+
+-----------------------------------------------------------------------
+
+Ques ) How do we declare an array in PHP.
+
+Ans : 
+	to declare a array in php we simply use
+	$arrayname = array(values)
+
+	in php the array automatically returns the datatype of values, we do not have to 	intialize it.
+
+
+
+----------------------------------------------------------------------
+
+Ques ) How to remove duplicate values in array.
+
+Ans :
+	to remove it we use the array_unique() function 
+	for example,
+	given array $arr = array(1,2,3,5,2)
+	then using 
+	print_r(array_unique($arr));
+
+	we get output :
+	[0] = 1
+	[1] = 2
+	[2] = 3
+	[3] = 5
+
+
+-----------------------------------
+
+Ques ) How to get random values from an array
+
+Ans :
+	we use the array_rand() function to simply get the random value from given array
+
+	for example,
+	given array $arr = array(1,2,3,5,2)
+	then using 
+	print_r(array_rand(2));
+
+	we get output : 
+	[2] = 3
+
+-------------------------------------------------
+
+Ques ) way to convert json to string
+
+Ans : 
+	$array = json_decode($json,true);
+	$string = implode(",",$array);
+	using this we can convert array to string
+
+
+---------------------------------------------------------------
+
+	

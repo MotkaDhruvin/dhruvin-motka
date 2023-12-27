@@ -1,0 +1,346 @@
+Ques ) Object Oriented Programming
+
+Ans : 
+	in oops we generally use different classes and objects to make a program
+	where class consists of data member and member functions,
+	here data members are the variable and member functions are normal functions
+	and object are made to access the classes
+
+------------------------------------
+
+Ques ) Properties of object oriented systems
+
+Ans : 
+	* class : collection of data member and member function
+	* objects : used to access class
+	* encapsulation : binding of classes
+	* inheritance : to use a function from different class with ones class object
+	* polymorphism : they are of two types 
+	a) runtime
+	b) compile time
+	* abstraction
+
+-------------------------------------------------------------
+
+Ques ) class and interface
+
+Ans : 
+	main difference of interface is that interface can't be represented, just like 	the abstract class.
+ 	However, fields are static, public in interface, 
+	whereas methods are public and abstract.
+	We can achieve multiple inheritance by using interface
+	We can achieve abstraction by using interface
+
+-----------------------------------------------------------------------
+
+Ques ) Overloading 
+
+Ans :
+	overloading is used to use a function from a class which has the same name
+	of function, so the function at the end of line gets run.
+
+-------------------------------------------------------------------
+
+Ques ) Scope resolution operator
+
+Ans : 
+
+	if two class have same function name, then we use (::) operator to 
+	run the function of parent class, say example using scope resolution method.
+
+
+<?php
+class add
+{   public $a = 10;
+    protected $b = 12 ;
+    private $c = 11;
+    public function sum()
+    {        echo "Total is from parent ".$this->a+$this->b+$this->c."<br>";
+        echo $this->c."<br>";}}
+class addition  extends add
+{    public function add1()   {
+        parent::sum();
+        echo "Total is  from child ".$this->num1+$this->num2;
+$obj = new addition;
+$obj->add1();
+$obj->sum(); ?>
+
+
+-----------------------------------------------
+
+Ques ) Difference bw abstract class and abstract interface
+
+Ans : 
+	in abstract class it's not neccesary to run all the functions,
+	but in case of interface it's compulsory to use all the functions.
+
+-----------------------------------------------
+
+Ques ) Constructor and destructor
+
+Ans : 
+	constructor :- it automatically runs the given function at the
+	beginning of the code
+
+	destructor : it runs at the end of the given program
+
+
+-----------------------------
+
+Ques ) load classes in PHP
+
+Ans : 
+	we simple initiate the object of given class
+	for example 
+class a
+{ 
+	public function a1()
+		{
+			}
+};
+
+	now we make a object
+
+$object = new a;
+object-> a1();
+
+----------------------------------
+
+Ques) how to call parent constructor
+
+Ans :
+	using scope resolution (::) we can call the parent constructor
+
+-----------------------------
+
+Ques ) are parent constrcutor called as implicity
+
+Ans :
+	yes, because they automatically runs at the start of the program
+
+-----------------
+
+Ques ) what happens if constrcutor is private or protected
+
+Ans :
+	we cannot make a object of the class if it is so
+
+----------------------------------------------
+
+Ques ) list all magic methods
+
+Ans : 
+	__construct(),
+	__destruct(),
+	__call(),
+	__callStatic(),
+	__get(),
+	__set(),
+	__isset(),
+	__unset(),
+	__sleep(),
+	__wakeup(),
+	__serialize(),
+	__unserialize(),
+	__toString(),
+	__invoke(),
+	__set_state(),
+	__clone(),
+	__debugInfo()
+
+-------------------------------------
+
+Ques ) write a program for static keyword
+
+Ans :
+
+	<?php
+	class hi {
+  	public static function hey() {
+    	echo "Hello World!";
+  		}
+			}
+				?>
+
+	now we write :
+	hi::hey();
+
+------------------------------
+
+Ques) use of $this 
+
+Ans :
+	we can use any variable, at any place, if it's declared in other class or even 
+	method.
+
+-----------------------------------
+
+
+
+
+
+**********	JQUERY		********
+
+
+Ques) What is Jquery?
+
+Ans : 	Jquery is a javascript library which helps in simplifying the html, css and 	javascript on website, also providing many built it functions which helps 	developers in designing the website.
+
+
+-------------------------------
+
+Ques) Javascript and Jquery Difference.
+
+Ans : 	Javascript is an programming language, whereas jquery is an javascript library, 	which uses DOM and takes less space and performs more functions of javascript.
+	Javascript here, uses many lines of codes and jquery does it in less lines.
+
+
+----------------------
+
+Ques) Which is the starting point of code execution in jQuery? 
+
+Ans : 	the $(document).ready() function is used for the execution for starting point.
+
+
+
+-------------------------------
+
+
+Ques) difference between document load and window load jquery.
+
+Ans :	In document load function, it's execution only takes place if the DOM is ready 	i.e the html document is loaded.
+	In window load case function is only loaded when full page is loaded first 	inlcuding everything like images or frames.
+
+
+---------------------------
+
+
+Ques) How We Can Select The Specified <li> Element From The ListOf <li>
+      Elements In <ul>? 
+
+Ans : 	The :eq() selector selects the element in a specific index
+	
+	$("p:eq(1)")
+
+
+--------------------------
+
+Ques) In <table> Design Change The Color Of Even <tr> Elements To 
+      “green”And Change The Color Of Odd <tr> Elements To “blue” Color? Give 
+       An Example Code? 
+
+Ans :   $("table tr:even").css("background-color", "green");
+  	$("table tr:odd").css("background-color", "blue");
+
+---------------------------------
+
+
+Ques) How We Can Implement Animation Effects In Jquery? 
+
+Ans :	we use the animate() method in jquery to use the animation effect.
+	also it contains many effects such as fadein, fade out, slidedown, slideup	
+
+
+
+-----------------------------------------
+
+Ques) Apply jQuery validation using library. 
+
+Ans : 	we use different jquery method for form validation
+
+	* validate()
+	* rules()
+	* messages()
+
+
+-------------------------------
+
+Ques) Create custom dynamic function for required field validator.
+
+Ans :
+
+$('.inputname').each(function() {
+  $(this).rules("add", {
+    required: true,
+    messages: {
+      required: "enter your name"
+    }
+  });
+});
+	
+	here we use both validate(), rules() methods 
+
+
+-----------------------------------
+
+Ques) Get state data by country selection (ajax)
+
+Ans : 
+
+
+first we give access to database for the server
+
+:->  $conn = mysqli_connect($servername,$username,$password,"$dbname");
+
+
+then we use the fetch function , by applying the select query
+
+:->  $result = mysqli_query($conn,"SELECT * FROM countries");
+    	 		 
+     while($row = mysqli_fetch_array($result))
+
+  
+we then print the values 
+<option value="<?php echo $row['id'];?>"><?php echo $row["name"];?></option>
+
+  
+now we use the jvascript function for state 
+<script>
+$('#state-dropdown').on('change', function() {
+                var state_id = this.value;
+                $.ajax({
+                    url: "cities-by-state.php",
+                    type: "POST",
+                    data: {
+                        state_id: state_id
+                    },
+                    cache: false,
+                    success: function(result){
+                        $("#city-dropdown").html(result);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+-------------------------------------------
+
+Ques) Image uploading with preview.
+
+Ans : 
+
+$(document).ready(()=>{
+	$('#photo').change(function(){
+		const file = this.files[0];
+		console.log(file);
+		if (file){
+		let reader = new FileReader();
+		reader.onload = function(event){
+			console.log(event.target.result);
+			$('#imgPreview').attr('src', event.target.result);
+		}
+		reader.readAsDataURL(file);
+		}
+	});
+	});
+
+	we use the filereader() function to preview the uploading image file
+
+
+
+------------------
+	
+
+
+
